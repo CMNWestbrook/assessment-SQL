@@ -367,3 +367,5 @@ The result set should be:
 SELECT name, year
 FROM models
 WHERE year IN (SELECT founded FROM brands);
+=======
+SELECT name FROM brands WHERE discontinued IS NULL;
